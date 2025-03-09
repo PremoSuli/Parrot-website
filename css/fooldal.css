@@ -1,0 +1,149 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+.header-image {
+    width: 100%;
+    height: 300px;
+    background: url('../kepek/parrot.jpg') center 30%/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+    font-size: 36px;
+    font-weight: bold;
+}
+
+nav {
+    width: 100%;
+    background-color: #333;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    overflow: hidden;
+    justify-content: center;
+}
+
+nav ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    font-size: 18px;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav ul li a:hover:not(.active) {
+    background-color: #070707;
+    color: rgb(255, 254, 254);
+    text-shadow: 2px 2px 8px rgb(6, 192, 145);
+}
+
+.active {
+    background-color: #000000;
+}
+
+.keret {
+    border: 1px solid #050505;
+    border-radius: 15px;
+    box-shadow: 10px 10px 5px rgb(174, 176, 177);
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 750px;
+    text-align: justify;
+}
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 750px;  
+    margin: 20px auto; 
+}
+
+.intro img {
+    width: 120px;
+    height: 120px;
+    border: 1px solid black;
+    border-radius: 15px;
+}
+
+.bal-kep {
+    float: left;
+    margin-right: 10px;
+}
+
+.jobb-kep {
+    float: right;
+    margin-left: 10px;
+}
+
+.external-links {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 150px;
+    /*flex-wrap: wrap;*/
+    margin: 20px auto;
+    max-width: 750px;
+}
+
+.external-links .keret {
+    width: 300px;
+    height: 400px;
+    text-align: center;
+    background-color: white;
+    padding: 0;
+    display: block; 
+    border-radius: 15px; 
+    overflow: hidden; 
+}
+
+.external-links a {
+    text-decoration: none;
+    color: black;
+}
+
+.external-links img {
+    width: 100%;
+    height: 85%;
+    display: block;
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #444;
+    gap: 10px;
+}
+
+.footer-links .keret {
+    max-width: 750px;
+    width: 250px;
+    height: 250px;
+    text-align: center;
+    overflow: hidden;
+    
+}
+
+.footer-links .keret a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+}
+
+.copyright {
+    background-color: #222;
+    color: white;
+    padding: 10px 0;
+    font-size: 14px;
+}

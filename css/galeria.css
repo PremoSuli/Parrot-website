@@ -1,0 +1,95 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+.header-image {
+    width: 100%;
+    height: 300px;
+    background: url('../kepek/parrot.jpg') center 30%/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+    font-size: 36px;
+    font-weight: bold;
+}
+
+nav {
+    width: 100%;
+    background-color: #333;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    overflow: hidden;
+    justify-content: center;
+}
+
+nav ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    font-size: 18px;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav ul li a:hover:not(.active) {
+    background-color: #070707;
+    color: rgb(255, 254, 254);
+    text-shadow: 2px 2px 8px rgb(6, 192, 145);
+}
+
+.active {
+    background-color: #000000;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Képek közötti egyenlő távolság */
+    gap: 10px; /* Távolság a képek között */
+    padding: 10px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.gallery .item {
+    width: 250px; /* Három oszlopot szeretnénk, levonva a gap-et */
+    text-align: center;
+}
+
+.gallery img {
+    width: 100%; /* A képek szélessége 100%-os, hogy kitöltse a szülő div-et */
+    height: 250px; /* Fix magasságot adunk, hogy a képek magasabbak legyenek */
+    object-fit: cover; /* Biztosítja, hogy a képek arányai ne torzuljanak */
+    border: 1px solid skyblue;
+    transition: opacity 300ms ease-in-out;
+    opacity: 0.7;
+    border-radius: 8px; /* Lekerekített sarkok */
+}
+
+.gallery img:hover {
+    border: 1px solid black;
+    opacity: 1.0;
+}
+
+.caption {
+    display: block;
+    font-style: italic;
+    font-size: 0.9em;
+    margin-top: 10px;
+}
+
+.copyright {
+    background-color: #222;
+    color: white;
+    padding: 10px 0;
+    font-size: 14px;
+}

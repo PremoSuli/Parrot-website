@@ -1,0 +1,101 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+.header-image {
+    width: 100%;
+    height: 300px;
+    background: url('../kepek/parrot.jpg') center 30%/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+    font-size: 36px;
+    font-weight: bold;
+}
+
+nav {
+    width: 100%;
+    background-color: #333;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    overflow: hidden;
+    justify-content: center;
+}
+
+nav ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    font-size: 18px;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav ul li a:hover:not(.active) {
+    background-color: #070707;
+    color: rgb(255, 254, 254);
+    text-shadow: 2px 2px 8px rgb(6, 192, 145);
+}
+
+.active {
+    background-color: #000000;
+}
+
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.562);
+}
+
+h1 {
+    text-align: center;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 12px;
+    text-align: center;
+}
+
+th {
+    background-color: #050505;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #c4c1c1b9;
+}
+
+tr:hover {
+    background-color: #070707b6;
+    color: white;
+    text-shadow: 0 0 3px #e5ff00da, 0 0 5px #00ffffc9;
+}
+
+.copyright {
+    background-color: #222;
+    color: white;
+    padding: 10px 0;
+    font-size: 14px;
+}
