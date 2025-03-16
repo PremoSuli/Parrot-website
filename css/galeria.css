@@ -28,7 +28,7 @@ nav ul {
     margin: 0;
     display: flex;
     overflow: hidden;
-    justify-content: center;
+    justify-content: flex-start;
 }
 
 nav ul li a {
@@ -53,26 +53,26 @@ nav ul li a:hover:not(.active) {
 .gallery {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between; /* Képek közötti egyenlő távolság */
-    gap: 10px; /* Távolság a képek között */
+    justify-content: space-between; 
+    gap: 10px; 
     padding: 10px;
     margin-left: 50px;
     margin-right: 50px;
 }
 
 .gallery .item {
-    width: 250px; /* Három oszlopot szeretnénk, levonva a gap-et */
+    width: 250px; 
     text-align: center;
 }
 
 .gallery img {
-    width: 100%; /* A képek szélessége 100%-os, hogy kitöltse a szülő div-et */
-    height: 250px; /* Fix magasságot adunk, hogy a képek magasabbak legyenek */
-    object-fit: cover; /* Biztosítja, hogy a képek arányai ne torzuljanak */
+    width: 100%; 
+    height: 250px; 
+    object-fit: cover; 
     border: 1px solid skyblue;
     transition: opacity 300ms ease-in-out;
     opacity: 0.7;
-    border-radius: 8px; /* Lekerekített sarkok */
+    border-radius: 8px; 
 }
 
 .gallery img:hover {

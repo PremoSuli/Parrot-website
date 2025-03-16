@@ -28,7 +28,7 @@ nav ul {
     margin: 0;
     display: flex;
     overflow: hidden;
-    justify-content: center;
+    justify-content: flex-start;
 }
 
 nav ul li a {
@@ -48,6 +48,13 @@ nav ul li a:hover:not(.active) {
 
 .active {
     background-color: #000000;
+}
+
+.media {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px auto;
 }
 
 .copyright {
