@@ -4,11 +4,19 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Papagájok.hu</title>
-        <link rel="stylesheet" href="css/video.css">
+        <link rel="stylesheet" href="css/fooldal.css">
+        <style>
+            #media {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin: 50px auto;
+            }
+        </style>
     </head>
     <body>
         <header>
-            <div class="header-image">
+            <div id="header-image">
                 <h1>Papagájok.hu</h1>
             </div>
         </header>
@@ -19,14 +27,18 @@
                 <li><a href="urlap.html">Űrlap</a></li>
                 <li><a href="tablazat.html">Táblázat</a></li>
                 <li><a href="galeria.html">Galéria</a></li>
-                <li><a class="active" href="video.html">Videó</a></li>
+                <li><a id="active" href="video.html">Videó</a></li>
             </ul>
         </nav>
-        <div class="media">
-            <video controls width="600">
-                <source src="video/Szusi1.mp4" type="video/mp4">
-            </video>
-        </div>
-        <div class="copyright">Copyright 2025 | Apró Abigél</div>
+        <section>
+            <article>
+                <div id="media">
+                    <video controls width="600">
+                        <source src="video/Szusi.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </article>
+        </section>
+        <div id="copyright">Copyright 2025 | Apró Abigél</div>
     </body>
 </html>

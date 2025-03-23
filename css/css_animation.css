@@ -1,56 +1,4 @@
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    text-align: center;
-}
-
-.header-image {
-    width: 100%;
-    height: 300px;
-    background: url('../kepek/parrot.jpg') center 30%/cover no-repeat;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    text-shadow: 2px 2px 4px #000000;
-    font-size: 36px;
-    font-weight: bold;
-}
-
-nav {
-    width: 100%;
-    background-color: #333;
-}
-
-nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    overflow: hidden;
-    justify-content: flex-start;
-}
-
-nav ul li a {
-    display: block;
-    color: white;
-    text-align: center;
-    font-size: 18px;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-
-nav ul li a:hover:not(.active) {
-    background-color: #070707;
-    color: rgb(255, 254, 254);
-    text-shadow: 2px 2px 8px rgb(6, 192, 145);
-}
-
-.active {
-    background-color: #000000;
-}
-
-.papagaj {
+#papagaj {
     position: relative; 
     width: 100%; 
     height: 450px; 
@@ -59,18 +7,18 @@ nav ul li a:hover:not(.active) {
     align-items: center;
 }
 
-.flying-parrot-right, .flying-parrot-left {
+#flying-right, #flying-left {
     position: absolute;
     top: 50%; 
     transform: translateY(-50%);
 }
 
-.flying-parrot-right {
+#flying-right {
     width: 300px;
     animation: repules-jobbra 5s linear infinite;
 }
 
-.flying-parrot-left {
+#flying-left {
     width: 300px;
     transform: translateY(-50%) scaleX(-1);
     animation: repules-balra 5s linear infinite;
@@ -92,11 +40,4 @@ nav ul li a:hover:not(.active) {
     100% {
         right: 100%;
     }
-}
-
-.copyright {
-    background-color: #222;
-    color: white;
-    padding: 10px 0;
-    font-size: 14px;
 }

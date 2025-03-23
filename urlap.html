@@ -1,52 +1,72 @@
 <!DOCTYPE html>
 <html lang="hu">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Papagájok.hu</title>
-        <link rel="stylesheet" href="css/urlap.css">
-    </head>
-    <body>
-        <header>
-            <div class="header-image">
-                <h1>Papagájok.hu</h1>
-            </div>
-        </header>
-        <nav>
-            <ul>
-                <li><a href="fooldal.html">Főoldal</a></li>
-                <li><a href="css_animation.html">CSS animáció</a></li>
-                <li><a class="active" href="urlap.html">Űrlap</a></li>
-                <li><a href="tablazat.html">Táblázat</a></li>
-                <li><a href="galeria.html">Galéria</a></li>
-                <li><a href="video.html">Videó</a></li>
-            </ul>
-        </nav>
-        <div class="container">
-            <img src="kepek/p3.png" alt="papagáj">
-            <h2>Bejelentkezés</h2>
 
-            <form action="#" method="POST">
-                <div class="form-group">
-                    <label for="name">Név:</label>
-                    <input type="text" placeholder="név" id="name" name="name" required>
-                </div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Papagájok.hu</title>
+    <link rel="stylesheet" href="css/fooldal.css">
+    <link rel="stylesheet" href="css/urlap.css">
+</head>
 
-                <div class="form-group">
-                    <label for="email">E-mail cím:</label>
-                    <input type="email" placeholder="email" id="email" name="email" required>
-                </div>
-
-                <div class="form-group">
-                    <label for="message">Üzenet:</label>
-                    <textarea id="message" name="message" required></textarea>
-                </div>
-
-                <div class="form-group">
-                    <input type="submit" value="Küldés">
-                </div>
-            </form>
+<body>
+    <header>
+        <div id="header-image">
+            <h1>Papagájok.hu</h1>
         </div>
-        <div class="copyright">Copyright | 2025 Apró Abigél</div>
-    </body>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="fooldal.html">Főoldal</a></li>
+            <li><a href="css_animation.html">CSS animáció</a></li>
+            <li><a id="active" href="urlap.html">Űrlap</a></li>
+            <li><a href="tablazat.html">Táblázat</a></li>
+            <li><a href="galeria.html">Galéria</a></li>
+            <li><a href="video.html">Videó</a></li>
+        </ul>
+    </nav>
+    <div id="container">
+        <section> 
+            <article>
+                <img src="kepek/p3.png" alt="papagáj">
+                <h2>Űrlap</h2>
+                <form action="" name="papagaj_regisztracio">
+                    <fieldset>
+                        <legend>Gazda adatai</legend>
+                        <p>
+                            <label for="nev">Név: <input type="text" name="nev" id="nev"></label>
+                        </p>
+                        <p>
+                            <label for="telefon">Telefon: <input type="tel" name="telefon" id="telefon" size="17"></label>
+                        </p>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Papagáj fajtája</legend>
+                        <p><label><input type="radio" name="fajta" value="hullamos" checked> Hullámos papagáj</label></p>
+                        <p><label><input type="radio" name="fajta" value="nimfa"> Nimfapapagáj</label></p>
+                        <p><label><input type="radio" name="fajta" value="amazon"> Amazon papagáj</label></p>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Papagáj neme</legend>
+                        <p><label><input type="radio" name="nem" value="hím" checked> Hím</label></p>
+                        <p><label><input type="radio" name="nem" value="nőstény"> Nőstény</label></p>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Papagáj színe</legend>
+                        <p><label><input type="checkbox" name="szin1" value="zold" checked> Zöld</label></p>
+                        <p><label><input type="checkbox" name="szin2" value="sarga"> Sárga</label></p>
+                        <p><label><input type="checkbox" name="szin3" value="kek"> Kék</label></p>
+                        <p><label><input type="checkbox" name="szin4" value="feher"> Fehér</label></p>
+                    </fieldset>
+                    <p><label for="ev">Születési év: <input type="number" name="ev" id="ev" min="2000" max="2025"></label></p>
+                    <p><label for="egyeb">Megjegyzés: <textarea name="egyeb" id="egyeb"></textarea></label></p>
+                    <button type="reset">Alaphelyzet</button>
+                    <button type="submit">Küldés</button>
+                </form>
+            </article>
+        </section>
+    </div>    
+    <div id="copyright">Copyright | 2025 Apró Abigél</div>
+</body>
+
 </html>
