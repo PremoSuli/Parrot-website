@@ -19,7 +19,7 @@ img {
 
 h2 {
     text-align: center;
-    color: #050505;
+    color: black;
     text-shadow: 3px 5px 2px #545555be;
     font-size: 24px;
     margin-bottom: 20px;
@@ -42,29 +42,50 @@ legend {
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.404);
 }
 
-.form-group {
+.input-group {
     margin-bottom: 20px;
 }
 
-.form-group label {
+.radio-group,
+.checkbox-group{
+    display: flex;
+    flex-direction: column;    
+}
+
+.radio-group label,
+.checkbox-group label {
+    display: flex;
+    flex-direction: row;
+    gap: 8px; 
+    font-size: 16px;
+    margin: 8px 0 8px 290px;
+    cursor: pointer;
+}
+
+.input-group label {
     display: block;
     font-size: 16px;
-    color: #030303;
+    color: black;
     margin-bottom: 5px;
 }
 
-.form-group input, .form-group textarea {
-    width: 100%;
-    padding: 12px;
+.input-group input, .form-group textarea {
+    width: 90%;
+    padding: 5px;
     margin-top: 5px;
     border: 1px solid #ccc;
     border-radius: 5px;
     font-size: 16px;
 }
 
-.form-group textarea {
+.input-group #ev{
+    width: 15%;
+}
+
+.input-group textarea {
     resize: vertical;
     min-height: 120px;
+    width: 50%;
 }
 
 button[type="submit"], button[type="reset"] {

@@ -2,7 +2,7 @@
     max-width: 800px;
     margin: 50px auto;
     padding: 20px;
-    background-color: #fff;
+    background-color: white;
     border-radius: 10px;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.562);
 }
@@ -27,7 +27,7 @@ th, td {
 }
 
 th {
-    background-color: #050505;
+    background-color: black;
     color: white;
 }
 
@@ -36,7 +36,7 @@ tr:nth-child(even) {
 }
 
 tr:hover {
-    background-color: #070707b6;
+    background-color: black;
     color: white;
     text-shadow: 0 0 3px #e5ff00da, 0 0 5px #00ffffc9;
 }

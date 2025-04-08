@@ -15,14 +15,14 @@ body {
     align-items: center;
     justify-content: center;
     color: white;
-    text-shadow: 2px 2px 4px #000000;
+    text-shadow: 2px 2px 4px black;
     font-size: 36px;
     font-weight: bold;
 }
 
 nav {
     width: 100%;
-    background-color: #333;
+    background-color: #222;
 }
 
 nav ul {
@@ -44,19 +44,19 @@ nav ul li a {
 }
 
 nav a:hover:not(.active) {
-    background-color: #070707;
+    background-color: black;
     color: rgb(255, 254, 254);
-    text-shadow: 2px 2px 8px rgb(6, 192, 145);
+    text-shadow: 3px 2px 8px rgb(255, 252, 49);
 }
 
 #active {
-    background-color: #000000;
+    background-color: black;
 }
 
 .keret {
-    border: 1px solid #050505;
+    border: 1px solid black;
     border-radius: 15px;
-    box-shadow: 10px 10px 5px rgb(174, 176, 177);
+    box-shadow: 10px 10px 5px rgba(174, 176, 177, 0.5);
     padding: 20px;
     margin: 20px auto;
     max-width: 750px;
@@ -88,70 +88,49 @@ nav a:hover:not(.active) {
     margin-left: 10px;
 }
 
-#external-links {
+#external-links, #footer-links {
     display: flex;
-    flex-direction: row;
-    justify-content: center;
     gap: 150px;
     margin: 20px auto;
     max-width: 750px;
+}
+
+#external-links .keret, #footer-links .keret{
+    width: 300px;
+    text-align: center;
+    overflow: hidden;
+    border-radius: 15px;
 }
 
 #external-links .keret {
-    width: 300px;
     height: 400px;
-    text-align: center;
-    background-color: white;
     padding: 0;
-    display: block; 
-    border-radius: 15px; 
-    overflow: hidden;
-}
-
-#external-links a {
-    text-decoration: none;
-    color: black;
-}
-
-#external-links .keret:hover a{
-    color: white;
-    text-shadow: 3px 2px 6px #000000;
-}
-
-#external-links img {
-    width: 100%;
-    height: 85%;
-    display: block;
-}
-
-#footer-links {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    gap: 150px;
-    margin: 20px auto;
-    max-width: 750px;
 }
 
 #footer-links .keret {
-    width: 300px;
-    height: 250px;
-    text-align: center;
-    overflow: hidden;
-    
+    height: 190px;
 }
 
-#footer-links .keret a {
-    color: black;
+#external-links .keret a, #footer-links .keret a {
     text-decoration: none;
-    transition: color 0.3 ease;
+    color: black;
     display: block;
-    padding: 10px;
     word-wrap: break-word;
 }
 
-#footer-links .keret a:hover{
-    color: teal;
+#footer-links .keret a{
+    padding: 10px;
+}
+
+#external-links .keret a:hover, #footer-links .keret a:hover{
+    color: white;
+    text-shadow: 5px 2px 6px black;
+}
+
+#external-links .keret img {
+    width: 100%;
+    height: 350px;
+    display: block;
 }
 
 #copyright {

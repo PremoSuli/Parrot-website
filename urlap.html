@@ -25,48 +25,70 @@
             <li><a href="video.html">Videó</a></li>
         </ul>
     </nav>
-    <div id="container">
+    <main id="container">
         <section> 
             <article>
-                <img src="kepek/p3.png" alt="papagáj">
+                <img src="kepek/p3.png" alt="papagáj"/>
                 <h2>Űrlap</h2>
                 <form action="" name="papagaj_regisztracio">
                     <fieldset>
                         <legend>Gazda adatai</legend>
-                        <p>
-                            <label for="nev">Név: <input type="text" name="nev" id="nev"></label>
-                        </p>
-                        <p>
-                            <label for="telefon">Telefon: <input type="tel" name="telefon" id="telefon" size="17"></label>
-                        </p>
+                        <div class="input-group">
+                            <label for="nev">Név:</label>
+                            <input type="text" name="nev" id="nev">
+                        </div>
+                        <div class="input-group">
+                            <label for="telefon">Telefon:</label>
+                            <input type="tel" name="telefon" id="telefon" size="17">
+                        </div>
                     </fieldset>
+                
                     <fieldset>
                         <legend>Papagáj fajtája</legend>
-                        <p><label><input type="radio" name="fajta" value="hullamos" checked> Hullámos papagáj</label></p>
-                        <p><label><input type="radio" name="fajta" value="nimfa"> Nimfapapagáj</label></p>
-                        <p><label><input type="radio" name="fajta" value="amazon"> Amazon papagáj</label></p>
+                        <div class="radio-group">
+                            <label><input type="radio" name="fajta" value="hullamos" checked> Hullámos papagáj</label>
+                            <label><input type="radio" name="fajta" value="nimfa"> Nimfapapagáj</label>
+                            <label><input type="radio" name="fajta" value="amazon"> Amazon papagáj</label>
+                        </div>
                     </fieldset>
+                
                     <fieldset>
                         <legend>Papagáj neme</legend>
-                        <p><label><input type="radio" name="nem" value="hím" checked> Hím</label></p>
-                        <p><label><input type="radio" name="nem" value="nőstény"> Nőstény</label></p>
+                        <div class="radio-group">
+                            <label><input type="radio" name="nem" value="hím" checked> Hím</label>
+                            <label><input type="radio" name="nem" value="nőstény"> Nőstény</label>
+                        </div>
                     </fieldset>
+                
                     <fieldset>
                         <legend>Papagáj színe</legend>
-                        <p><label><input type="checkbox" name="szin1" value="zold" checked> Zöld</label></p>
-                        <p><label><input type="checkbox" name="szin2" value="sarga"> Sárga</label></p>
-                        <p><label><input type="checkbox" name="szin3" value="kek"> Kék</label></p>
-                        <p><label><input type="checkbox" name="szin4" value="feher"> Fehér</label></p>
+                        <div class="checkbox-group">
+                            <label><input type="checkbox" name="szin1" value="zold" checked> Zöld</label>
+                            <label><input type="checkbox" name="szin2" value="sarga"> Sárga</label>
+                            <label><input type="checkbox" name="szin3" value="kek"> Kék</label>
+                            <label><input type="checkbox" name="szin4" value="feher"> Fehér</label>
+                        </div>
                     </fieldset>
-                    <p><label for="ev">Születési év: <input type="number" name="ev" id="ev" min="2000" max="2025"></label></p>
-                    <p><label for="egyeb">Megjegyzés: <textarea name="egyeb" id="egyeb"></textarea></label></p>
-                    <button type="reset">Alaphelyzet</button>
-                    <button type="submit">Küldés</button>
+                
+                    <div class="input-group">
+                        <label for="ev">Születési év:</label>
+                        <input type="number" name="ev" id="ev" min="2000" max="2025">
+                    </div>
+                
+                    <div class="input-group">
+                        <label for="egyeb">Megjegyzés:</label>
+                        <textarea name="egyeb" id="egyeb"></textarea>
+                    </div>
+                
+                    <div class="button-wrapper">
+                        <button type="reset">Alaphelyzet</button>
+                        <button type="submit">Küldés</button>
+                    </div>
                 </form>
             </article>
         </section>
-    </div>    
-    <div id="copyright">Copyright | 2025 Apró Abigél</div>
+    </main>    
+    <footer id="copyright">Copyright | 2025 Apró Abigél</footer>
 </body>
 
 </html>
